@@ -1,0 +1,226 @@
+2026-02-16 22:22:40,827 [INFO] Boot Seqeunce Started
+2026-02-16 22:22:40,827 [INFO] Boot Complete
+2026-02-17 10:46:11,817 [INFO] Boot Seqeunce Started
+2026-02-17 10:46:11,822 [INFO] Boot Complete
+2026-02-17 11:24:39,551 [INFO] Boot Seqeunce Started
+2026-02-17 11:24:47,475 [INFO] Boot Complete
+2026-02-17 11:54:29,175 [INFO] Boot Seqeunce Started
+2026-02-17 11:56:00,792 [INFO] Boot Complete
+2026-02-17 11:56:05,144 [INFO] Boot Seqeunce Started
+2026-02-17 11:56:15,961 [INFO] Boot Complete
+2026-02-17 12:07:04,242 [INFO] Boot Seqeunce Started
+2026-02-17 12:10:48,037 [INFO] Boot Seqeunce Started
+2026-02-17 12:13:52,742 [INFO] Boot Complete
+2026-02-17 12:29:12,660 [INFO] Boot Seqeunce Started
+2026-02-17 12:33:39,565 [INFO] Boot Seqeunce Started
+2026-02-17 12:36:51,368 [INFO] Boot Complete
+2026-02-17 13:24:49,538 [INFO] Boot Seqeunce Started
+2026-02-17 13:26:17,473 [INFO] Boot Complete
+2026-02-17 14:09:34,889 [INFO] Boot Seqeunce Started
+2026-02-17 14:10:32,978 [INFO] Boot Complete
+2026-02-17 15:09:25,263 [INFO] Boot Seqeunce Started
+2026-02-17 15:09:45,307 [INFO] Boot Seqeunce Started
+2026-02-17 15:14:16,950 [INFO] Boot Complete
+2026-02-17 15:19:57,416 [INFO] Boot Seqeunce Started
+2026-02-17 15:21:02,480 [INFO] Boot Complete
+2026-02-17 15:21:30,524 [INFO] Boot Seqeunce Started
+2026-02-17 15:25:36,389 [INFO] Boot Complete
+2026-02-17 15:35:44,561 [INFO] Boot Seqeunce Started
+2026-02-17 15:37:01,998 [INFO] Boot Complete
+2026-02-17 15:38:49,770 [INFO] Boot Seqeunce Started
+2026-02-17 15:39:16,327 [INFO] Boot Complete
+2026-02-17 15:41:23,544 [INFO] Boot Seqeunce Started
+2026-02-17 15:42:40,403 [INFO] Boot Complete
+2026-02-17 15:43:52,173 [INFO] Boot Seqeunce Started
+2026-02-17 15:44:38,797 [INFO] Boot Complete
+2026-02-17 15:47:07,527 [INFO] Boot Seqeunce Started
+2026-02-17 15:47:51,776 [INFO] Boot Complete
+2026-02-17 15:48:41,575 [INFO] Boot Seqeunce Started
+2026-02-17 15:48:55,882 [INFO] Boot Complete
+2026-02-17 15:49:19,922 [INFO] Boot Seqeunce Started
+2026-02-17 15:49:26,779 [INFO] Boot Complete
+2026-02-17 15:49:40,548 [INFO] Boot Seqeunce Started
+2026-02-17 15:50:54,400 [INFO] Boot Complete
+2026-02-17 16:05:40,226 [INFO] Boot Seqeunce Started
+2026-02-17 16:11:30,675 [INFO] Boot Complete
+2026-02-18 12:24:30,408 [INFO] Boot Seqeunce Started
+2026-02-18 12:26:14,412 [INFO] Boot Complete
+2026-02-18 12:29:01,356 [INFO] Boot Seqeunce Started
+2026-02-18 12:29:13,843 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-aa8789f9-ea80-4953-b13b-2cc8967b8b41', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:29:13,848 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:29:13,849 [DEBUG] connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-18 12:29:13,887 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x702049ef98a0>
+2026-02-18 12:29:13,887 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x70204ad75d40> server_hostname='api.openai.com' timeout=5.0
+2026-02-18 12:29:13,902 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x702049ef9930>
+2026-02-18 12:29:13,902 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:13,903 [DEBUG] send_request_headers.complete
+2026-02-18 12:29:13,903 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:29:13,903 [DEBUG] send_request_body.complete
+2026-02-18 12:29:13,903 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:14,597 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 06:59:14 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_eafb5c3b38a5498aa7134b1fa890e18c'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=hkLYyWh2sE7ZHm.fks_99hs8IN6okR0DirqXcpZp67c-1771397953.896955-1.0.1.1-RU.b6oQu2rZpMaRPEnQANZC0vR9Zu.iNWMd8wpjtrcG8baSsu6MITeRlvSkvqWrlygvpFYGABTaEu6ySYStFUePHUgiAOZXHBhKULf60rDkLlT0NwkJfFr2LkDRbrYKf; HttpOnly; Secure; Path=/; Domain=api.openai.com; Expires=Wed, 18 Feb 2026 07:29:14 GMT'), (b'set-cookie', b'_cfuvid=4Mg4aXArpZ_VwmZJeOUdmGJvGtngjpOEqPCSwNdlGAM-1771397953.896955-1.0.1.1-yMKCT_y1EPGur04YZpIo.FvzRqfp4iCdUAH9sfo9JoQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'CF-RAY', b'9cfba3fbdf15ad7b-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:29:14,602 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:29:14,602 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:29:14,602 [DEBUG] receive_response_body.complete
+2026-02-18 12:29:14,602 [DEBUG] response_closed.started
+2026-02-18 12:29:14,602 [DEBUG] response_closed.complete
+2026-02-18 12:29:14,602 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers([('date', 'Wed, 18 Feb 2026 06:59:14 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '337'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_eafb5c3b38a5498aa7134b1fa890e18c'), ('x-openai-proxy-wasm', 'v0.1'), ('server', 'cloudflare'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=hkLYyWh2sE7ZHm.fks_99hs8IN6okR0DirqXcpZp67c-1771397953.896955-1.0.1.1-RU.b6oQu2rZpMaRPEnQANZC0vR9Zu.iNWMd8wpjtrcG8baSsu6MITeRlvSkvqWrlygvpFYGABTaEu6ySYStFUePHUgiAOZXHBhKULf60rDkLlT0NwkJfFr2LkDRbrYKf; HttpOnly; Secure; Path=/; Domain=api.openai.com; Expires=Wed, 18 Feb 2026 07:29:14 GMT'), ('set-cookie', '_cfuvid=4Mg4aXArpZ_VwmZJeOUdmGJvGtngjpOEqPCSwNdlGAM-1771397953.896955-1.0.1.1-yMKCT_y1EPGur04YZpIo.FvzRqfp4iCdUAH9sfo9JoQ; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('cf-ray', '9cfba3fbdf15ad7b-DEL'), ('alt-svc', 'h3=":443"; ma=86400')])
+2026-02-18 12:29:14,602 [DEBUG] request_id: req_eafb5c3b38a5498aa7134b1fa890e18c
+2026-02-18 12:29:14,602 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:29:14,608 [DEBUG] Retrying due to status code 429
+2026-02-18 12:29:14,608 [DEBUG] 2 retries left
+2026-02-18 12:29:14,608 [INFO] Retrying request to /chat/completions in 0.416529 seconds
+2026-02-18 12:29:15,047 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-aa8789f9-ea80-4953-b13b-2cc8967b8b41', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:29:15,048 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:29:15,048 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:15,049 [DEBUG] send_request_headers.complete
+2026-02-18 12:29:15,049 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:29:15,050 [DEBUG] send_request_body.complete
+2026-02-18 12:29:15,050 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:15,747 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 06:59:15 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_f2e3c7aa152744299996d09f41cc6517'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-RAY', b'9cfba4030cacad7b-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:29:15,747 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:29:15,748 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:29:15,748 [DEBUG] receive_response_body.complete
+2026-02-18 12:29:15,748 [DEBUG] response_closed.started
+2026-02-18 12:29:15,748 [DEBUG] response_closed.complete
+2026-02-18 12:29:15,748 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Wed, 18 Feb 2026 06:59:15 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_f2e3c7aa152744299996d09f41cc6517', 'x-openai-proxy-wasm': 'v0.1', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-ray': '9cfba4030cacad7b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-18 12:29:15,748 [DEBUG] request_id: req_f2e3c7aa152744299996d09f41cc6517
+2026-02-18 12:29:15,748 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:29:15,748 [DEBUG] Retrying due to status code 429
+2026-02-18 12:29:15,748 [DEBUG] 1 retry left
+2026-02-18 12:29:15,748 [INFO] Retrying request to /chat/completions in 0.943136 seconds
+2026-02-18 12:29:16,695 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-aa8789f9-ea80-4953-b13b-2cc8967b8b41', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:29:16,696 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:29:16,696 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:16,697 [DEBUG] send_request_headers.complete
+2026-02-18 12:29:16,697 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:29:16,697 [DEBUG] send_request_body.complete
+2026-02-18 12:29:16,697 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:29:17,365 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 06:59:17 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_f17e52f4f336428b93d578a9894fb64c'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-RAY', b'9cfba40d5fc7ad7b-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:29:17,365 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:29:17,365 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:29:17,365 [DEBUG] receive_response_body.complete
+2026-02-18 12:29:17,365 [DEBUG] response_closed.started
+2026-02-18 12:29:17,365 [DEBUG] response_closed.complete
+2026-02-18 12:29:17,365 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Wed, 18 Feb 2026 06:59:17 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_f17e52f4f336428b93d578a9894fb64c', 'x-openai-proxy-wasm': 'v0.1', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-ray': '9cfba40d5fc7ad7b-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-18 12:29:17,365 [DEBUG] request_id: req_f17e52f4f336428b93d578a9894fb64c
+2026-02-18 12:29:17,365 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:29:17,366 [DEBUG] Re-raising status error
+2026-02-18 12:31:19,768 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-2427de91-0fe0-44ca-9f7b-0883c006cfcc', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}, {'role': 'user', 'content': 'ext'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:31:19,769 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:31:19,769 [DEBUG] close.started
+2026-02-18 12:31:19,770 [DEBUG] close.complete
+2026-02-18 12:31:19,770 [DEBUG] connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-18 12:31:19,799 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x702049d9d360>
+2026-02-18 12:31:19,799 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x70204ad75d40> server_hostname='api.openai.com' timeout=5.0
+2026-02-18 12:31:19,818 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x702049d9d3c0>
+2026-02-18 12:31:19,818 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:19,819 [DEBUG] send_request_headers.complete
+2026-02-18 12:31:19,819 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:31:19,819 [DEBUG] send_request_body.complete
+2026-02-18 12:31:19,819 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:20,121 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 07:01:20 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_249f20befea24b78a5ffb7f2d3397cc0'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-RAY', b'9cfba70edd2e45ec-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:31:20,122 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:31:20,122 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:31:20,122 [DEBUG] receive_response_body.complete
+2026-02-18 12:31:20,122 [DEBUG] response_closed.started
+2026-02-18 12:31:20,122 [DEBUG] response_closed.complete
+2026-02-18 12:31:20,122 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Wed, 18 Feb 2026 07:01:20 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_249f20befea24b78a5ffb7f2d3397cc0', 'x-openai-proxy-wasm': 'v0.1', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-ray': '9cfba70edd2e45ec-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-18 12:31:20,122 [DEBUG] request_id: req_249f20befea24b78a5ffb7f2d3397cc0
+2026-02-18 12:31:20,122 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:31:20,122 [DEBUG] Retrying due to status code 429
+2026-02-18 12:31:20,122 [DEBUG] 2 retries left
+2026-02-18 12:31:20,122 [INFO] Retrying request to /chat/completions in 0.446862 seconds
+2026-02-18 12:31:20,573 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-2427de91-0fe0-44ca-9f7b-0883c006cfcc', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}, {'role': 'user', 'content': 'ext'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:31:20,573 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:31:20,574 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:20,575 [DEBUG] send_request_headers.complete
+2026-02-18 12:31:20,575 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:31:20,576 [DEBUG] send_request_body.complete
+2026-02-18 12:31:20,576 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:20,876 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 07:01:20 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_26443ace7f524fb7bcda3a881e694fbf'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-RAY', b'9cfba7138fa145ec-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:31:20,876 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:31:20,877 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:31:20,877 [DEBUG] receive_response_body.complete
+2026-02-18 12:31:20,877 [DEBUG] response_closed.started
+2026-02-18 12:31:20,877 [DEBUG] response_closed.complete
+2026-02-18 12:31:20,877 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Wed, 18 Feb 2026 07:01:20 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_26443ace7f524fb7bcda3a881e694fbf', 'x-openai-proxy-wasm': 'v0.1', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-ray': '9cfba7138fa145ec-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-18 12:31:20,877 [DEBUG] request_id: req_26443ace7f524fb7bcda3a881e694fbf
+2026-02-18 12:31:20,877 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:31:20,877 [DEBUG] Retrying due to status code 429
+2026-02-18 12:31:20,877 [DEBUG] 1 retry left
+2026-02-18 12:31:20,877 [INFO] Retrying request to /chat/completions in 0.884938 seconds
+2026-02-18 12:31:21,763 [DEBUG] Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-2427de91-0fe0-44ca-9f7b-0883c006cfcc', 'content': None, 'json_data': {'messages': [{'role': 'user', 'content': 'what is quantum mechanics'}, {'role': 'user', 'content': 'ext'}], 'model': 'gpt-4o-mini', 'temperature': 0.7}}
+2026-02-18 12:31:21,763 [DEBUG] Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-18 12:31:21,763 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:21,766 [DEBUG] send_request_headers.complete
+2026-02-18 12:31:21,766 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-18 12:31:21,767 [DEBUG] send_request_body.complete
+2026-02-18 12:31:21,767 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-18 12:31:22,484 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Wed, 18 Feb 2026 07:01:22 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_dfd57803858045d395d8964365d3e811'), (b'x-openai-proxy-wasm', b'v0.1'), (b'Server', b'cloudflare'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'CF-RAY', b'9cfba71b0ebb45ec-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-18 12:31:22,484 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-02-18 12:31:22,484 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-18 12:31:22,484 [DEBUG] receive_response_body.complete
+2026-02-18 12:31:22,484 [DEBUG] response_closed.started
+2026-02-18 12:31:22,484 [DEBUG] response_closed.complete
+2026-02-18 12:31:22,484 [DEBUG] HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Wed, 18 Feb 2026 07:01:22 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_dfd57803858045d395d8964365d3e811', 'x-openai-proxy-wasm': 'v0.1', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-ray': '9cfba71b0ebb45ec-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-18 12:31:22,484 [DEBUG] request_id: req_dfd57803858045d395d8964365d3e811
+2026-02-18 12:31:22,484 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/openai/_base_client.py", line 1050, in request
+    response.raise_for_status()
+  File "/creed-storage/creed/venv/lib/python3.10/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-02-18 12:31:22,484 [DEBUG] Re-raising status error
+2026-02-18 12:40:52,716 [INFO] Boot Complete
+2026-02-18 13:00:52,944 [INFO] Boot Seqeunce Started
+2026-02-18 13:01:01,182 [DEBUG] Starting new HTTP connection (1): 192.168.68.60:11434
+2026-02-18 13:07:19,691 [INFO] Boot Complete
+2026-02-18 13:22:47,594 [INFO] Boot Seqeunce Started
+2026-02-18 13:22:54,711 [DEBUG] Starting new HTTP connection (1): 192.168.68.60:11434
+2026-02-18 13:23:12,945 [DEBUG] http://192.168.68.60:11434 "POST /api/chat HTTP/1.1" 200 493
+2026-02-18 13:23:43,379 [INFO] Boot Complete
+2026-02-18 13:29:20,263 [INFO] Boot Seqeunce Started
+2026-02-18 13:29:21,729 [DEBUG] Starting new HTTP connection (1): 192.168.68.60:11434
+2026-02-18 13:30:05,845 [DEBUG] http://192.168.68.60:11434 "POST /api/chat HTTP/1.1" 200 326
+2026-02-18 13:30:14,230 [DEBUG] Starting new HTTP connection (1): 192.168.68.60:11434
+2026-02-18 13:30:25,041 [DEBUG] http://192.168.68.60:11434 "POST /api/chat HTTP/1.1" 200 565
+2026-02-18 13:30:42,032 [DEBUG] Starting new HTTP connection (1): 192.168.68.60:11434
+2026-02-18 13:30:53,880 [DEBUG] http://192.168.68.60:11434 "POST /api/chat HTTP/1.1" 200 623
+2026-02-18 13:31:48,402 [INFO] Boot Complete
