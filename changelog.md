@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-02-20 13:14:44.250972
+Last updated: 2026-02-20 14:53:48.985331
 
 ## Features
 - test changelog system
@@ -9,6 +9,10 @@ Last updated: 2026-02-20 13:14:44.250972
 - initalize changelog
 
 ## Other
+- phase : Added FASTAPI Backend and intialized engine on startup
+- chore: add dependency txt file
+- phase: finalize stability layer
+- Initialize README with project details and roadmap
 - chore:add gitignore and clean tracking
 - Delete path_utils.py
 - Delete e.nv
