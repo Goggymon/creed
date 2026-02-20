@@ -1,11 +1,12 @@
 from core.engine import CreedEngine
 from config.settings import config
 from utils.logger import setup_logger
+from version import VERSION
 
 def boot():
 	logger = setup_logger()
 
-	print (f"==={config.assistant_name} v{config.version} ===")
+	print (f"CREED v{VERSION} initialized")
 	logger.info("Boot Seqeunce Started")
 
 	creed = CreedEngine()

@@ -18,7 +18,7 @@ class CreedEngine:
         self.history = []
         self.data_lock = threading.Lock() 
         self.ai_module = None
-        self.name = "ai"
+        self.auto_load_modules()
 
     def auto_load_modules(self, folder="modules"):
         if not os.path.exists(folder):
