@@ -18,6 +18,7 @@ class CreedEngine:
         self.history = []
         self.data_lock = threading.Lock() 
         self.ai_module = None
+        self.name = "ai"
 
     def auto_load_modules(self, folder="modules"):
         if not os.path.exists(folder):
@@ -33,17 +34,20 @@ class CreedEngine:
                     module = importlib.import_module(module_path)
 
                     if hasattr(module, "Module"):
-                        instance = module.Module(self.data_lock)
-                        self.modules[instance.name] = instance
-                        if instance.name == "ai":
-                             self.ai_module = instance
+                       instance = module.Module(self.data_lock)
+                       self.modules[instance.name] = instance
 
-                    if hasattr(instance, "intents"):
-                        for intent in instance.intents:
-                             self.router.register(intent, instance)
+                       if instance.name == "ai":
+                           self.ai_module = instance
 
-                    print(f"[+] Auto-loaded module: {instance.name}")
+                       if hasattr(instance, "intents"):
+                           for intent in instance.intents:
+                               self.router.register(intent, instance)
 
+                       print(f"[+] Auto-loaded module: {instance.name}")
+
+                    else:
+                        print(f"[WARNING] Module '{module_name}' has no 'Module' class.")
 
                 except Exception as e:
                     print(f"[ERROR] Failed to load module '{module_name}': {e}")
