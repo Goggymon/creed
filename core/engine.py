@@ -77,14 +77,11 @@ class CreedEngine:
        
         else:
             if self.ai_module:
-                try:
-                    ai_response = self.ai_module.chat(self.history)
-                    print(f"Creed: {ai_response}")
-                    self.history.append({"role": "assistant", "content": ai_response})
-                except Exception as e:
-                    print(f"Creed: AI error: {e}")
+                 ai_response = self.ai_module.chat(self.history)
+                 print(ai_response)
             else:
-                print("Creed: I don't understand that yet.")
+                 print("I don't understand that yet.")
+
 
 
         return True
