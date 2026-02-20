@@ -18,8 +18,6 @@ def chat(payload: dict):
     if not message:
         return {"response": "No message provided."}
 
-    response = engine.ai_module.chat([
-        {"role": "user", "content": message}
-    ])
+    response, _ = engine.handle_input(message)
 
     return {"response": response}

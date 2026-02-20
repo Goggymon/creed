@@ -9,7 +9,7 @@ class Module:
         self.data_lock = data_lock
         self.model = "phi3"
         self.endpoint = "http://localhost:11434/api/chat"
-        self.timeout = 5
+        self.timeout = 20
 
     def chat(self, history):
         try:
@@ -17,7 +17,8 @@ class Module:
                 self.endpoint,
                 json={
                     "model": self.model,
-                    "messages": history
+                    "messages": history,
+                    "stream": False
                 },
                 timeout=self.timeout
             )

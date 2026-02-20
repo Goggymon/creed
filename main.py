@@ -10,7 +10,6 @@ def boot():
 	logger.info("Boot Seqeunce Started")
 
 	creed = CreedEngine()
-	creed.auto_load_modules()
 	creed.run()
 
 	logger.info("Boot Complete")

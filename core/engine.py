@@ -1,8 +1,10 @@
 import os
 import importlib
+from pydoc import text
 import threading
 import time
 from datetime import datetime
+from urllib import response
 from core.router import IntentRouter
 
 class CreedEngine:
@@ -56,10 +58,9 @@ class CreedEngine:
         text = text.strip()
 
         if text.lower() == "exit":
-            print("Creed shutting down.")
-            return False
+            return "Creed shutting down.", False
 
-        # Store user message
+    # Store user message
         self.history.append({"role": "user", "content": text})
 
         intent, module = self.router.dispatch(text)
@@ -71,27 +72,19 @@ class CreedEngine:
 
             self.context["last_intent"] = intent
             self.context["last_module"] = module.name
-        else:
-            # No structured intent found
-            response = None
 
-        if response:
-            print(f"Creed: {response}")
-            self.history.append({"role": "assistant", "content": response})
-       
-        else:
+        if not response:
             if self.ai_module:
-                 ai_response = self.ai_module.chat(self.history)
-                 print(ai_response)
+                response = self.ai_module.chat(self.history)
             else:
-                 print("I don't understand that yet.")
+                response = "I don't understand that yet."
+
+    # Store assistant response
+        self.history.append({"role": "assistant", "content": response})
+
+        return response, True
 
 
-
-        return True
-
-
-        return True
 
     def input_available(self):
         return True
@@ -116,7 +109,12 @@ class CreedEngine:
         try:
             while self.running:
                 user_input = input("> ")
-                self.running = self.handle_input(user_input)
+
+                response, continue_flag = self.handle_input(user_input)
+
+                print(f"Creed: {response}")
+
+                self.running = continue_flag
 
         except KeyboardInterrupt:
             print("\nCreed shutting down.")

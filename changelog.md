@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Last updated: 2026-02-20 14:57:49.485528
+Last updated: 2026-02-21 03:12:33.651988
 
 ## Features
 - test changelog system
@@ -10,6 +10,9 @@ Last updated: 2026-02-20 14:57:49.485528
 - initalize changelog
 
 ## Other
+- Merge branch 'main' of https://github.com/Goggymon/creed
+- patch : fixed changelog
+- Revise README for updated project details
 - phase : Added FASTAPI Backend and intialized engine on startup
 - chore: add dependency txt file
 - phase: finalize stability layer
