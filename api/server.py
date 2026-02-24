@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from core.engine import CreedEngine
+from fastapi.responses import StreamingResponse
 
 app = FastAPI()
 
@@ -10,14 +11,12 @@ engine = CreedEngine()
 def health_check():
     return {"status": "CREED backend online"}
 
-
 @app.post("/chat")
 def chat(payload: dict):
     message = payload.get("message", "")
 
-    if not message:
-        return {"response": "No message provided."}
+    def generator():
+        for token in engine.stream_response(message):
+            yield token
 
-    response, _ = engine.handle_input(message)
-
-    return {"response": response}
+    return StreamingResponse(generator(), media_type="text/plain")
