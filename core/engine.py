@@ -14,20 +14,23 @@ class CreedEngine:
 
         self.cloud = CloudModule()
         self.tts = TTSModule()
-        
+
         self.modules = {}
         self.router = IntentRouter()
-        self.auto_load_modules()
+        self.lock = threading.Lock()
+        self.load_modules()
 
         # Personality system prompt
-        self.history.append({
-            "role": "system",
-            "content": (
-                "You are CREED, a sharp and intelligent AI assistant. "
-                "Respond concisely but clearly. "
-                "Use 2–4 short sentences unless detailed explanation is requested."
-            )
-        })
+        self.history.append(
+            {
+                "role": "system",
+                "content": (
+                    "You are CREED, a sharp and intelligent AI assistant. "
+                    "Respond concisely but clearly. "
+                    "Use 2–4 short sentences unless detailed explanation is requested."
+                ),
+            }
+        )
 
     def stream_response(self, text):
         self.history.append({"role": "user", "content": text})
@@ -76,12 +79,13 @@ class CreedEngine:
                 self.tts.speak(spoken_buffer.strip())
 
             print()
+
     def load_modules(self):
         from modules.memory import Module as MemoryModule
         from modules.system import Module as SystemModule
 
-        memory = MemoryModule()
-        system = SystemModule()
+        memory = MemoryModule(self.lock)
+        system = SystemModule(self.lock)
 
         self.modules["memory"] = memory
         self.modules["system"] = system

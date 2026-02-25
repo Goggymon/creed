@@ -1271,3 +1271,24 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-02-24 15:00:20,343 [DEBUG] response_closed.complete
 2026-02-24 15:00:24,208 [DEBUG] close.started
 2026-02-24 15:00:24,208 [DEBUG] close.complete
+2026-02-25 19:05:44,958 [INFO] Boot Seqeunce Started
+2026-02-25 19:05:47,708 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-fdb470ad-deff-4664-a6b8-3412be312fdb', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'explain gravity'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-02-25 19:05:47,746 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-02-25 19:05:47,746 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-25 19:05:47,778 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000218F4C7EC20>
+2026-02-25 19:05:47,778 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x00000218F4B0C740> server_hostname='api.groq.com' timeout=5.0
+2026-02-25 19:05:47,778 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000218F4C7ECB0>
+2026-02-25 19:05:47,778 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-25 19:05:47,778 [DEBUG] send_request_headers.complete
+2026-02-25 19:05:47,778 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-25 19:05:47,778 [DEBUG] send_request_body.complete
+2026-02-25 19:05:47,778 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-25 19:05:47,877 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 25 Feb 2026 13:35:47 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'4220'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'17.8s'), (b'x-request-id', b'req_01kjag6k9yexqv7yybb2czay07'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=6lDeNTJRFkYBci0j6ldPeeTE2oQAxjOym4fWqjQjVkU-1772026547.4894297-1.0.1.1-EhvEgjij8IfiqAm.GYtwRDJYkKeNb3qeTnmiuOuo1Rmga2IfHjcKnDXKb8JtbuEqzlUZU915lWCw5xTSDa2zjNUzu6RHOCcUGmUpb_PsCIpY650NJuzJWFp8Jwk5i2Td; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Wed, 25 Feb 2026 14:05:47 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9d379681cc0f24b2-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-25 19:05:47,877 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 19:05:47,877 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Wed, 25 Feb 2026 13:35:47 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '4220', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '17.8s', 'x-request-id': 'req_01kjag6k9yexqv7yybb2czay07', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=6lDeNTJRFkYBci0j6ldPeeTE2oQAxjOym4fWqjQjVkU-1772026547.4894297-1.0.1.1-EhvEgjij8IfiqAm.GYtwRDJYkKeNb3qeTnmiuOuo1Rmga2IfHjcKnDXKb8JtbuEqzlUZU915lWCw5xTSDa2zjNUzu6RHOCcUGmUpb_PsCIpY650NJuzJWFp8Jwk5i2Td; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Wed, 25 Feb 2026 14:05:47 GMT', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9d379681cc0f24b2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-25 19:05:47,878 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-25 19:05:47,973 [DEBUG] receive_response_body.complete
+2026-02-25 19:05:47,973 [DEBUG] response_closed.started
+2026-02-25 19:05:47,973 [DEBUG] response_closed.complete
+2026-02-25 19:06:00,408 [DEBUG] close.started
+2026-02-25 19:06:00,408 [DEBUG] close.complete

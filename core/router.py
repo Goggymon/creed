@@ -19,13 +19,9 @@ class IntentRouter:
 
         for word in words:
             close = difflib.get_close_matches(
-                word,
-                self.routes.keys(),
-                n=1,
-                cutoff=0.75
+                word, self.routes.keys(), n=1, cutoff=0.75
             )
             if close:
                 return close[0], self.routes[close[0]]
 
         return None, None
-
