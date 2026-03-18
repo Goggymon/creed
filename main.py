@@ -2,18 +2,20 @@ from core.engine import CreedEngine
 from config.settings import config
 from utils.logger import setup_logger
 from version import VERSION
+from fastapi import FastAPI
+
 
 def boot():
-	logger = setup_logger()
+    logger = setup_logger()
 
-	print (f"CREED v{VERSION} initialized")
-	logger.info("Boot Seqeunce Started")
+    print(f"CREED v{VERSION} initialized")
+    logger.info("Boot Seqeunce Started")
 
-	creed = CreedEngine()
-	creed.run()
+    creed = CreedEngine()
+    creed.run()
 
-	logger.info("Boot Complete")
+    logger.info("Boot Complete")
+
 
 if __name__ == "__main__":
-	boot()
-
+    boot()

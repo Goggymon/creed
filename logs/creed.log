@@ -1292,3 +1292,142 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-02-25 19:05:47,973 [DEBUG] response_closed.complete
 2026-02-25 19:06:00,408 [DEBUG] close.started
 2026-02-25 19:06:00,408 [DEBUG] close.complete
+2026-02-25 20:28:33,593 [INFO] Boot Seqeunce Started
+2026-02-25 20:28:41,131 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4906fad7-6b48-44c3-8d52-0ce1323b5c64', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'what is gravity'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-02-25 20:28:41,183 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-02-25 20:28:41,183 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-25 20:28:41,227 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AF59C4520>
+2026-02-25 20:28:41,227 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022AF579A640> server_hostname='api.groq.com' timeout=5.0
+2026-02-25 20:28:41,227 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AF59C45B0>
+2026-02-25 20:28:41,227 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-02-25 20:28:41,227 [DEBUG] send_request_headers.complete
+2026-02-25 20:28:41,227 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-02-25 20:28:41,227 [DEBUG] send_request_body.complete
+2026-02-25 20:28:41,227 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-02-25 20:28:41,322 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 25 Feb 2026 14:58:40 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5929'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'710ms'), (b'x-request-id', b'req_01kjamyc4heeatbf1gvzdj3w7d'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=9bJ1PyJuR9db0nex2YyXDhToCPB9uenaoDJp_EN2.N8-1772031520.8851495-1.0.1.1-dqU7RxLjd.RvHmGuqyeCOCgwBkIO6ujVkqzxpv0mbBJjMZzHAUegS6Ip2eLZQI2UKQkuK_.SI_U3.7aEs2QmApr_W2iUPDYAERtrmGDvQo3ic5L8xcFrfStUmMyijH2q; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Wed, 25 Feb 2026 15:28:40 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9d380fed8cc0de4c-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-25 20:28:41,322 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-25 20:28:41,322 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Wed, 25 Feb 2026 14:58:40 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5929', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '710ms', 'x-request-id': 'req_01kjamyc4heeatbf1gvzdj3w7d', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=9bJ1PyJuR9db0nex2YyXDhToCPB9uenaoDJp_EN2.N8-1772031520.8851495-1.0.1.1-dqU7RxLjd.RvHmGuqyeCOCgwBkIO6ujVkqzxpv0mbBJjMZzHAUegS6Ip2eLZQI2UKQkuK_.SI_U3.7aEs2QmApr_W2iUPDYAERtrmGDvQo3ic5L8xcFrfStUmMyijH2q; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Wed, 25 Feb 2026 15:28:40 GMT', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9d380fed8cc0de4c-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-25 20:28:41,322 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-02-25 20:28:41,395 [DEBUG] receive_response_body.complete
+2026-02-25 20:28:41,395 [DEBUG] response_closed.started
+2026-02-25 20:28:41,395 [DEBUG] response_closed.complete
+2026-02-25 20:28:46,666 [DEBUG] close.started
+2026-02-25 20:28:46,666 [DEBUG] close.complete
+2026-03-03 17:20:28,577 [INFO] Boot Seqeunce Started
+2026-03-03 17:20:44,978 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-cc088c04-c2bb-400c-b966-f428122d8f8a', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'hi'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-03 17:20:45,026 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-03 17:20:45,026 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-03 17:20:45,101 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029A7FAC63B0>
+2026-03-03 17:20:45,101 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029A7F8E2940> server_hostname='api.groq.com' timeout=5.0
+2026-03-03 17:20:45,133 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029A7FAC6440>
+2026-03-03 17:20:45,133 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-03 17:20:45,133 [DEBUG] send_request_headers.complete
+2026-03-03 17:20:45,133 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-03 17:20:45,133 [DEBUG] send_request_body.complete
+2026-03-03 17:20:45,133 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-03 17:20:45,326 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Mar 2026 11:50:45 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5931'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'690ms'), (b'x-request-id', b'req_01kjsrjjmmembr1kx03xyzxnsf'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=ULI269d5g75F5sLNXjYsAleuJ2u5o_7VnhshexXpMEc-1772538645.0977266-1.0.1.1-twac2BwwVKRoT9.6_eQFwyc7xX_J7nxMIDRhBSuIcVa3d1GnZUOOhmsvwUMUATedWCmyVeWi0aIWJc5lG8GQ2Lt8szlffeE9tdz2LjJoOS5hgFiCNugTgSb_AEs8WC_k; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Tue, 03 Mar 2026 12:20:45 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9d686ce3dec968e2-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-03 17:20:45,341 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 17:20:45,341 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 03 Mar 2026 11:50:45 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5931', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '690ms', 'x-request-id': 'req_01kjsrjjmmembr1kx03xyzxnsf', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=ULI269d5g75F5sLNXjYsAleuJ2u5o_7VnhshexXpMEc-1772538645.0977266-1.0.1.1-twac2BwwVKRoT9.6_eQFwyc7xX_J7nxMIDRhBSuIcVa3d1GnZUOOhmsvwUMUATedWCmyVeWi0aIWJc5lG8GQ2Lt8szlffeE9tdz2LjJoOS5hgFiCNugTgSb_AEs8WC_k; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Tue, 03 Mar 2026 12:20:45 GMT', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9d686ce3dec968e2-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-03 17:20:45,341 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-03 17:20:45,373 [DEBUG] receive_response_body.complete
+2026-03-03 17:20:45,373 [DEBUG] response_closed.started
+2026-03-03 17:20:45,373 [DEBUG] response_closed.complete
+2026-03-03 17:21:02,531 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-7aafa5ad-2b0c-4af4-b878-ba2c60196ab8', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello, how can I assist you today?'}, {'role': 'user', 'content': 'who are u'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-03 17:21:02,532 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-03 17:21:02,532 [DEBUG] close.started
+2026-03-03 17:21:02,533 [DEBUG] close.complete
+2026-03-03 17:21:02,533 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-03 17:21:02,542 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029A7FB20910>
+2026-03-03 17:21:02,542 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029A7F8E2940> server_hostname='api.groq.com' timeout=5.0
+2026-03-03 17:21:02,555 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029A7FB20A60>
+2026-03-03 17:21:02,556 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-03 17:21:02,556 [DEBUG] send_request_headers.complete
+2026-03-03 17:21:02,556 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-03 17:21:02,556 [DEBUG] send_request_body.complete
+2026-03-03 17:21:02,556 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-03 17:21:02,643 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Mar 2026 11:51:02 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5909'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'910ms'), (b'x-request-id', b'req_01kjsrk3mzex7v4z9zb94t1a54'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9d686d50bd015790-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-03 17:21:02,643 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-03 17:21:02,644 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 03 Mar 2026 11:51:02 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5909', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '910ms', 'x-request-id': 'req_01kjsrk3mzex7v4z9zb94t1a54', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9d686d50bd015790-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-03 17:21:02,644 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-03 17:21:02,679 [DEBUG] receive_response_body.complete
+2026-03-03 17:21:02,679 [DEBUG] response_closed.started
+2026-03-03 17:21:02,679 [DEBUG] response_closed.complete
+2026-03-03 17:21:56,761 [INFO] Boot Complete
+2026-03-03 17:21:57,168 [DEBUG] close.started
+2026-03-03 17:21:57,168 [DEBUG] close.complete
+2026-03-10 22:40:51,724 [INFO] Boot Seqeunce Started
+2026-03-10 22:41:03,498 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-cdfe0329-0edc-455a-9107-a35bf292234d', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'What is 2+2'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-10 22:41:03,602 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-10 22:41:03,602 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-10 22:41:03,663 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE0A380>
+2026-03-10 22:41:03,663 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E18DC4E940> server_hostname='api.groq.com' timeout=5.0
+2026-03-10 22:41:03,690 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE0A410>
+2026-03-10 22:41:03,690 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:03,692 [DEBUG] send_request_headers.complete
+2026-03-10 22:41:03,692 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-10 22:41:03,692 [DEBUG] send_request_body.complete
+2026-03-10 22:41:03,693 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:03,777 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Mar 2026 17:11:03 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5926'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'740ms'), (b'x-request-id', b'req_01kkcbp3hyehebm27whxh04812'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=SXLYGGCXPIqgMmhKmRo.MGKQL9j1IPxtlrKfu.VmrLo-1773162663.4764159-1.0.1.1-U7BsUbIizU_XEj2ipqEMuD_3Ne1LucPhuUQZX3Yk5jbGYUOnO5pVfPU5UoWnmG5StvDPoEBzy1bfx4RnpM1Qm5soabXkT_R5OwdZtM0NVLfX.LZfYn.Mhp6n_NxgJA8i; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Tue, 10 Mar 2026 17:41:03 GMT'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9da3efb6b8a651de-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-10 22:41:03,779 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 22:41:03,779 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Mar 2026 17:11:03 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5926', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '740ms', 'x-request-id': 'req_01kkcbp3hyehebm27whxh04812', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=SXLYGGCXPIqgMmhKmRo.MGKQL9j1IPxtlrKfu.VmrLo-1773162663.4764159-1.0.1.1-U7BsUbIizU_XEj2ipqEMuD_3Ne1LucPhuUQZX3Yk5jbGYUOnO5pVfPU5UoWnmG5StvDPoEBzy1bfx4RnpM1Qm5soabXkT_R5OwdZtM0NVLfX.LZfYn.Mhp6n_NxgJA8i; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Tue, 10 Mar 2026 17:41:03 GMT', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9da3efb6b8a651de-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-10 22:41:03,779 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-10 22:41:03,833 [DEBUG] receive_response_body.complete
+2026-03-10 22:41:03,835 [DEBUG] response_closed.started
+2026-03-10 22:41:03,835 [DEBUG] response_closed.complete
+2026-03-10 22:41:20,668 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-3e596f8d-81bc-4361-b24b-f5553dcfdfdc', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'What is 2+2'}, {'role': 'assistant', 'content': '2 + 2 equals 4.'}, {'role': 'user', 'content': 'What is the square root of 142'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-10 22:41:20,670 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-10 22:41:20,671 [DEBUG] close.started
+2026-03-10 22:41:20,674 [DEBUG] close.complete
+2026-03-10 22:41:20,675 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-10 22:41:20,699 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE608E0>
+2026-03-10 22:41:20,699 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E18DC4E940> server_hostname='api.groq.com' timeout=5.0
+2026-03-10 22:41:20,717 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE60A30>
+2026-03-10 22:41:20,718 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:20,719 [DEBUG] send_request_headers.complete
+2026-03-10 22:41:20,719 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-10 22:41:20,719 [DEBUG] send_request_body.complete
+2026-03-10 22:41:20,719 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:20,809 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Mar 2026 17:11:20 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5900'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'1s'), (b'x-request-id', b'req_01kkcbpm65eka8ch29fzzgmh9a'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9da3f0212f6354a1-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-10 22:41:20,811 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 22:41:20,811 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Mar 2026 17:11:20 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5900', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '1s', 'x-request-id': 'req_01kkcbpm65eka8ch29fzzgmh9a', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9da3f0212f6354a1-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-10 22:41:20,811 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-10 22:41:20,848 [DEBUG] receive_response_body.complete
+2026-03-10 22:41:20,849 [DEBUG] response_closed.started
+2026-03-10 22:41:20,849 [DEBUG] response_closed.complete
+2026-03-10 22:41:33,516 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-5d1762bf-b56f-48a5-bf0c-ee814514e6d5', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'What is 2+2'}, {'role': 'assistant', 'content': '2 + 2 equals 4.'}, {'role': 'user', 'content': 'What is the square root of 142'}, {'role': 'assistant', 'content': 'The square root of 142 is approximately 11.9.'}, {'role': 'user', 'content': 'exit\\'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-10 22:41:33,519 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-10 22:41:33,521 [DEBUG] close.started
+2026-03-10 22:41:33,521 [DEBUG] close.complete
+2026-03-10 22:41:33,522 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-10 22:41:33,547 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE62440>
+2026-03-10 22:41:33,548 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x000001E18DC4E940> server_hostname='api.groq.com' timeout=5.0
+2026-03-10 22:41:33,564 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001E18EE62680>
+2026-03-10 22:41:33,564 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:33,567 [DEBUG] send_request_headers.complete
+2026-03-10 22:41:33,567 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-10 22:41:33,569 [DEBUG] send_request_body.complete
+2026-03-10 22:41:33,569 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:33,655 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Mar 2026 17:11:33 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5875'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'1.25s'), (b'x-request-id', b'req_01kkcbq0qrekxtyyk8qbgdrb1s'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9da3f0717815598e-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-10 22:41:33,655 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 22:41:33,655 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Mar 2026 17:11:33 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5875', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '1.25s', 'x-request-id': 'req_01kkcbq0qrekxtyyk8qbgdrb1s', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9da3f0717815598e-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-10 22:41:33,656 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-10 22:41:33,679 [DEBUG] receive_response_body.complete
+2026-03-10 22:41:33,679 [DEBUG] response_closed.started
+2026-03-10 22:41:33,679 [DEBUG] response_closed.complete
+2026-03-10 22:41:35,926 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-e03b5f6e-c148-43bf-b4ce-916ee499532d', 'json_data': {'messages': [{'role': 'system', 'content': 'You are CREED, a sharp and intelligent AI assistant. Respond concisely but clearly. Use 2–4 short sentences unless detailed explanation is requested.'}, {'role': 'user', 'content': 'What is 2+2'}, {'role': 'assistant', 'content': '2 + 2 equals 4.'}, {'role': 'user', 'content': 'What is the square root of 142'}, {'role': 'assistant', 'content': 'The square root of 142 is approximately 11.9.'}, {'role': 'user', 'content': 'exit\\'}, {'role': 'assistant', 'content': 'Connection terminated.'}, {'role': 'user', 'content': 'eit'}], 'model': 'llama-3.1-8b-instant', 'stream': True}}
+2026-03-10 22:41:35,928 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-03-10 22:41:35,928 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:35,929 [DEBUG] send_request_headers.complete
+2026-03-10 22:41:35,930 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-03-10 22:41:35,930 [DEBUG] send_request_body.complete
+2026-03-10 22:41:35,930 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-03-10 22:41:36,023 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Mar 2026 17:11:35 GMT'), (b'Content-Type', b'text/event-stream'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'no-cache'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'bom'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'5860'), (b'x-ratelimit-reset-requests', b'12s'), (b'x-ratelimit-reset-tokens', b'1.4s'), (b'x-request-id', b'req_01kkcbq31nem19zkkg8a9s8b7t'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'9da3f0803fe1598e-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-03-10 22:41:36,025 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-10 22:41:36,025 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Mar 2026 17:11:35 GMT', 'content-type': 'text/event-stream', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'bom', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '5860', 'x-ratelimit-reset-requests': '12s', 'x-ratelimit-reset-tokens': '1.4s', 'x-request-id': 'req_01kkcbq31nem19zkkg8a9s8b7t', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': '9da3f0803fe1598e-DEL', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-03-10 22:41:36,025 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-03-10 22:41:36,148 [DEBUG] receive_response_body.complete
+2026-03-10 22:41:36,149 [DEBUG] response_closed.started
+2026-03-10 22:41:36,149 [DEBUG] response_closed.complete
+2026-03-10 22:41:37,828 [INFO] Boot Complete
+2026-03-10 22:41:38,086 [DEBUG] close.started
+2026-03-10 22:41:38,087 [DEBUG] close.complete

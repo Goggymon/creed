@@ -1,8 +1,11 @@
-import requests
+import token
+
 from PySide6.QtCore import QThread, Signal
+import requests
 
 
 class ChatWorker(QThread):
+
     new_token = Signal(str)
     finished_signal = Signal()
     error_signal = Signal(str)
@@ -13,6 +16,7 @@ class ChatWorker(QThread):
         self._running = True
 
     def run(self):
+
         try:
             response = requests.post(
                 "http://127.0.0.1:8000/chat",
@@ -20,13 +24,16 @@ class ChatWorker(QThread):
                 stream=True,
             )
 
-            for chunk in response.iter_content(chunk_size=None):
+            print("STATUS:", response.status_code)
+
+            for chunk in response.iter_content(chunk_size=1):
+
                 if not self._running:
                     break
-                if chunk:
-                    token = chunk.decode("utf-8")
-                    self.new_token.emit(token)
 
+                if chunk:
+                    token = chunk.decode("utf-8", errors="ignore")
+                    self.new_token.emit(token)
             self.finished_signal.emit()
 
         except Exception as e:
