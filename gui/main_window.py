@@ -389,13 +389,6 @@ class MainWindow(QMainWindow):
         if not hasattr(self, "current_ai_bubble"):
             print("No bubble yet")
             return
-
-        # DEBUG
-        print("TOKEN IN GUI:", token)
-
-        current_text = self.current_ai_bubble.label.text()
-        self.current_ai_bubble.label.setText(current_text + token)
-
         # force UI refresh
         self.current_ai_bubble.label.repaint()
 
